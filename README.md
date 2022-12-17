@@ -33,6 +33,7 @@ System Requirements
 
 * geoips >= 1.5.4
 * Test data repos contained in $GEOIPS_TESTDATA_DIR for tests to pass.
+    * git lfs  # If using git to clone test repos
 
 
 IF REQUIRED: Install base geoips package
@@ -50,6 +51,7 @@ Obtain test repo
     # using $GEOIPS_TESTDATA_DIR and $GEOIPS_CONFIG_FILE:
     source $GEOIPS_CONFIG_FILE
     git clone $GEOIPS_REPO_URL/test_data_sar $GEOIPS_TESTDATA_DIR/test_data_sar
+    $GEOIPS_TESTDATA_DIR/test_data_sar/uncompress_test_data.sh
 ```
 
 Run sample test scripts
